@@ -4,7 +4,7 @@ import config from '../../etc/configs.json';
 
 import '../models/Post';
 
-const Post = mongoose.model('Post');
+const Post = mongoose.model('posts');
 
 export function setUpConnection() {
   mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);

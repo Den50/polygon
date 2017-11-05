@@ -20,7 +20,7 @@ server.use( bodyParser.json() );
 server.use(cors({ origin: '*' }));
 
 
-server.get('/', function(req, res){
+server.get('/posts', function(req, res){
   console.log('req: ' + req.url);
   db.listPosts().then(data => res.send(data));
 });

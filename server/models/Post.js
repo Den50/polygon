@@ -9,4 +9,4 @@ const PostSchema = new Schema({
     createdAt : { type: Date }
 });
 
-mongoose.model('Post', PostSchema);
+mongoose.model('posts', PostSchema);
