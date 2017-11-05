@@ -20,9 +20,13 @@ server.use( bodyParser.json() );
 server.use(cors({ origin: '*' }));
 
 
-server.get('/', function(req, res){
+server.get('/users', function(req, res){
   console.log('req: ' + req.url);
-  db.listPosts().then(data => res.send(data));
+  db.listUsers().then(data => res.send(data));
+});
+server.get('/users/:login', function(req, res){
+  console.log('req: ' + req.url);
+  db.getUsersByLogin(req.params.login).then(data => res.send(data));
 });
 
 

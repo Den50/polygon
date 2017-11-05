@@ -2,16 +2,19 @@ import mongoose from "mongoose";
 
 import config from '../../etc/configs.json';
 
-import '../models/Post';
+import '../models/Users';
 
-const Post = mongoose.model('Post');
+const Users = mongoose.model('Users');
 
 export function setUpConnection() {
   mongoose.connect(`mongodb://${config.db.host}:${config.db.port}/${config.db.name}`);
 }
 
-export function listPosts(id) {
-  return Post.find();
+export function listUsers(id) {
+  return Users.find();
+}
+export function getUsersByLogin(login) {
+  return Users.findOne({login: login});
 }
 
 export function createPosts(data) {
