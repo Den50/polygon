@@ -1,0 +1,93 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+//Custom Styles Here
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: #fff
+	z-index: 999
+	.cssload-thecube
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+.container
+	
+	height: 100% !important
+	display: block
+	.row
+		display: block
+		height: 100%
+		padding-top: 50px
+		div.col-md-6
+			padding: 30px
+			height: 100%
+			.wrap_item
+				padding: 20px
+				display: block
+				border-radius: 25px 25px 0 0
+				min-height: 80%
+
+			.wrap_learner
+				background-color: #2866F7
+				transition: all ease-in-out .5
+				h1 
+					text-align: center
+					a
+						color: #fff
+						text-transform: uppercase
+				&:hover
+					background-color: #1c5df7
+				p
+					color: #fff
+			.wrap_admin
+				background-color: #2B9483
+				transition: all ease-in-out .5
+				&:hover
+					background-color: #1a8a78
+				h1 
+					text-align: center
+					a
+						color: #fff
+						text-transform: uppercase
+				p
+					color: #fff
+
+
+//ALWAYS END
+@import "media"
