@@ -38,7 +38,7 @@
 		<link rel="stylesheet" href="css/fonts.min.css">
 		<link rel="stylesheet" href="css/main.min.css">
 	</noscript>
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -53,34 +53,11 @@
 		</div>
 	</div>
 
-	<div class="container-fluid">	
-		<div class="row">
-			<div class="col-md-2 col-lg-2 navbarmain">
-				<div class="brand"><h1>Admin Panel</h1></div>
-				<ul class="navbar">
-					<li class="active">Users</li>
-					<li>Tests</li>
-					<li>DB</li>
-					<li>Features</li>
-				</ul>
-			</div>
-			<div class="col-md-10 col-lg-10 mainArea">
-				<div class="wrp">
-					<div class="users-settings">
-						<h1>Users Online</h1>
-						<select class="changeApp">
-							<option value="test">test</option>
-							<option value="chat">chat</option>
-						</select>
-						<ul class="onlineusers">
-							<li>Daniil Shenyagin<i class="fa fa-info-circle info"></i><i class="fa fa-times-circle close"></i></li>
-							<li>Audrey Subbotin<i class="fa fa-info-circle info"></i><i class="fa fa-times-circle close"></i></li>
-							<li>Sergey Missurin<i class="fa fa-info-circle info"></i><i class="fa fa-times-circle close"></i></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div class="wrp-login">
+		<h1>Admin Login</h1>
+		<div id="login"><input type="text" placeholder="login"></div>
+		<div id="pass"><input type="password" placeholder="password"></div>
+		<button>Login</button>
 	</div>
 
 	<div class="hidden"></div>

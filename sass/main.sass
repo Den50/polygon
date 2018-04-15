@@ -3,7 +3,7 @@
 
 //Load Libs SASS
 @import "app/libs/animate/animate.sass"
-@import "../app/libs/fontawesome/web-fonts-with-css/scss/fontawesome.scss"
+// @import "../app/libs/fontawesome/web-fonts-with-css/scss/fontawesome.scss"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -48,72 +48,85 @@ html, body
 		bottom: 0
 		margin: auto
 
+body, html
+	height: 100%
+.container-fluid
+	height: 100%
+	.row
+		height: 100%
+		.navbarmain
+			background-color: #2B9483
+			height: 100%
+			.brand h1
+				color: #fff
+				text-transform: uppercase
+				font-size: 25px
+			ul.navbar
+				padding: 0
+				margin-top: 50px
+				li
+					list-style: none
+					padding: 0
+					color: #fff
+					padding: 5px 0
+					border-bottom: 1px solid #fff
+					cursor: pointer
+					&:last-child
+						border-bottom: none
+				li.active
+					&::after
+						content: '*'
+						float: right
+.container-fluid
+	width: 100%
+	height: 100%
+	.row
+		width: 100%
+		height: 100%
+		.mainArea
+			height: 100%
+			.wrp
+				height: 100%
+				padding: 5px 20px
+				.users-settings
+					h1
+						border-bottom: 1px solid #2B9483
+					select
+						border: none
+						background-color: #fff
+						width: 120px
+						height: 35px
+						// box-shadow: 0 0 7px rgba(0,0,0,.3)
+						border: 2px solid #2866F7
+						border-radius: 5px
+						padding: 0 7px
+						outline: none
+					ul.onlineusers
+						padding: 0
+						margin-top: 50px
+						li
+							list-style: none
+							padding: 5px 10px
+							margin-bottom: 20px
+							box-shadow: 0 0 15px rgba(0,0,0,.4)
+							width: 250px
+							max-width: 350px
+							border-radius: 18px
+							position: relative
+							line-height: 28px
+							// border: 1px solid #2866F7
+							i
+								font-size: 18px
+								color: #2866F7
+								position: absolute
+								right: 0
+								padding-right: 15px
+								line-height: 28px
+								cursor: pointer
+							.info
+								margin-right: 20px
+							.close
 
-.wrp-login
-	display: block
-	position: fixed
-	top: 0
-	left: 0
-	right: 0
-	bottom: 0
-	background-color: #fff
-	z-index: 999
-	margin: auto
-	width: 350px
-	height: 300px
-	background-color: #2B9483
-	text-align: center
-	border-radius: 5px
-	h1
-		display: inline-block
-		color: #fff
-		text-transform: uppercase
-	input
-		width: 250px
-		margin: auto
-		display: block
-		border: #fff 1px solid
-		box-shadow: 0 0 10px rgba(0,0,0,.3)
-		height: 35px
-		font-size: 18px
-		outline: none
-		padding: 0 25px
-		border-radius: 3px
-		&:nth-child(1)
-			margin-bottom: 15px
-	#login
-		&::before
-			font-family: FontAwesome
-			content: "\f007"
-			position: absolute
-			font-size: 22px
-			margin: 0 0 0 55px
-			left: 0
-			color: #2c536c
-	#pass
-		&::before
-			font-family: FontAwesome
-			content: "\f023"
-			position: absolute
-			font-size: 22px
-			margin: 0 0 0 55px
-			left: 0
-			color: #2c536c
-
-	button
-		margin-top: 30px
-		background-color: #2866F7
-		color: #fff
-		width: 120px
-		border: none
-		padding: 5px
-		font-size: 18px
-		border-bottom: 4px solid #0d52f5
-		border-radius: 3px
-		box-shadow: 0 0 10px rgba(0,0,0,.3)
-		&:hover
-			background-color: darken(#2866F7, 2%)
-			border-bottom: 4px solid darken(#0d52f5, 2%)
 
 
 

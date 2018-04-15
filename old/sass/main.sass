@@ -1,0 +1,121 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+// @import "../app/libs/fontawesome/web-fonts-with-css/scss/fontawesome.scss"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+//Custom Styles Here
+.preloader
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: #fff
+	z-index: 999
+	.cssload-thecube
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		margin: auto
+
+
+.wrp-login
+	display: block
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: #fff
+	z-index: 999
+	margin: auto
+	width: 350px
+	height: 300px
+	background-color: #2B9483
+	text-align: center
+	border-radius: 5px
+	h1
+		display: inline-block
+		color: #fff
+		text-transform: uppercase
+	input
+		width: 250px
+		margin: auto
+		display: block
+		border: #fff 1px solid
+		box-shadow: 0 0 10px rgba(0,0,0,.3)
+		height: 35px
+		font-size: 18px
+		outline: none
+		padding: 0 25px
+		border-radius: 3px
+		&:nth-child(1)
+			margin-bottom: 15px
+	#login
+		&::before
+			font-family: FontAwesome
+			content: "\f007"
+			position: absolute
+			font-size: 22px
+			margin: 0 0 0 55px
+			left: 0
+			color: #2c536c
+	#pass
+		&::before
+			font-family: FontAwesome
+			content: "\f023"
+			position: absolute
+			font-size: 22px
+			margin: 0 0 0 55px
+			left: 0
+			color: #2c536c
+
+	button
+		margin-top: 30px
+		background-color: #2866F7
+		color: #fff
+		width: 120px
+		border: none
+		padding: 5px
+		font-size: 18px
+		border-bottom: 4px solid #0d52f5
+		border-radius: 3px
+		box-shadow: 0 0 10px rgba(0,0,0,.3)
+		&:hover
+			background-color: darken(#2866F7, 2%)
+			border-bottom: 4px solid darken(#0d52f5, 2%)
+
+
+
+//ALWAYS END
+@import "media"
